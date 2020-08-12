@@ -1,0 +1,78 @@
+<section class="section_all bg-light" id="contact">
+  <div class="container">
+    <div class="row" data-aos="fade-up">
+      <div class="col-lg-12">
+        <div class="section_title text-center">
+          <h3 class="font-weight-bold title_services">Get In Tuch</h3>
+          <div class="vr_line mx-auto d-block"></div>
+          <p class="sec_subtitle mx-auto text-muted pt-2 sec_services">Si deseas contactar conmigo para cualquier consulta, duda, pedir presupuesto... no dudes!</p>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-3" data-aos="fade-up">
+      <div class="col-lg-6">
+        <div class="contact_info_box">
+          <div class="contact_details_content bg-white p-3 mt-3">
+            <div class="contact_icon float-left  pull-left">
+              <i class="pe-7s-map-marker text_custom mr-3"></i>
+            </div>
+            <div class="contact_detail">
+              <h6 class="font-weight-bold title_services">Address</h6>
+              <p class="text-muted mb-0 dsc_services">{{_is.info.address}}</p>
+            </div>
+          </div>
+          <div class="contact_details_content bg-white p-3 mt-3">
+            <div class="contact_icon float-left  pull-left">
+              <i class="pe-7s-mail-open text_custom mr-3"></i>
+            </div>
+            <div class="contact_detail">
+              <h6 class="font-weight-bold title_services">E-mail</h6>
+              <p class="text-muted mb-0 dsc_services">
+                {{_is.info.email}}
+              </p>
+            </div>
+          </div>
+          <div class="contact_details_content bg-white p-3 mt-3">
+            <div class="contact_icon float-left  pull-left">
+              <i class="pe-7s-phone text_custom mr-3"></i>
+            </div>
+            <div class="contact_detail">
+              <h6 class="font-weight-bold title_services">Phone</h6>
+              <p class="text-muted mb-0 dsc_services">{{_is.info.phone}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <form class="business_form_custom">
+          <div class="form-row mt-3">
+            <div class="col">
+              <input name="name" id="name" type="text" class="form-control in-contact" placeholder="Your name...">
+            </div>
+          </div>
+          <div class="form-row mt-3">
+            <div class="col">
+              <input name="email" id="email" type="email" class="form-control in-contact" placeholder="Your email...">
+            </div>
+          </div>
+          <div class="form-row mt-3">
+            <div class="col">
+              <input type="text" class="form-control in-contact" id="subject" placeholder="Your Subject..">
+            </div>
+          </div>
+          <div class="form-row mt-3">
+            <div class="col">
+              <textarea name="comments" id="comments" rows="4" class="form-control in-contact"
+                placeholder="Your message..."></textarea>
+            </div>
+          </div>
+          <div class="form-row mt-3">
+            <div class="col">
+              <input type="submit" id="submit" name="send" class="submitBnt btn btn-custom" value="Send Message">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
