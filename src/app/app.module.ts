@@ -5,6 +5,8 @@ import { InformacionService } from './services/informacion.service';
 
 import { HttpClientModule } from '@angular/common/http';
 
+import { APP_BASE_HREF } from '@angular/common';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -38,7 +40,8 @@ import { FooterComponent } from './components/footer/footer.component';
     AppRoutingModule
   ],
   providers: [
-    InformacionService
+    InformacionService,
+    {provide: APP_BASE_HREF, useValue: '/'}
   ],
   bootstrap: [AppComponent]
 })
